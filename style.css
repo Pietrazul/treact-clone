@@ -435,22 +435,62 @@ h1 {
 }
 
 #pricing .section__para {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .plans {
   display: flex;
   justify-content: space-between;
-  text-align: center;
   width: 100%;
+  position: relative;
+  z-index: 100;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  margin: 24px;
+  width: calc(100% / 3);
+  text-align: center;
 }
 
 .plan__top,
 .plan__middle,
 .plan__bottom {
   padding: 32px;
-  border: 1.5px solid lightgray;
-  border-radius: 5px;
+  border: 1.5px solid rgb(230, 230, 230);
+  border-radius: 7px;
+  }
+
+.plan__name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.plan__price {
+  font-size: 48px;
+  margin: 16px 0;
+  font-weight: bold;
+}
+
+.plan__duration {
+  color: rgb(159, 159, 159);
+  font-weight: bold;
+  letter-spacing: 0.06cm;
+}
+
+.plan__target {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.plan__feature {
+    margin-top: 16px;
+    font-weight: 500;
+    color: #718096e1;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .plan__button {
@@ -473,4 +513,24 @@ h1 {
   letter-spacing: 0.05em;
   line-height: 1.5;
   transition: all 300ms;
+}
+
+/* TESTIMONIALS */
+
+#testimonials .section__para {
+  text-align: left;
+}
+
+.testimonial__img {
+  width: 50%;
+}
+
+.testimonials__description {
+  display: flex;
+  flex-direction: column;
+  padding-left: 60px;
+}
+
+i {
+  color: rgba(246, 173, 85);
 }
